@@ -1,0 +1,10 @@
+{
+  "name": "json-template",
+  "version": "0.0.0",
+  "private": true,
+  "main": "index.js",
+  "license": "MIT",
+  "dependencies": {
+    "expressions-js": "^0.1.12"
+  }
+}

@@ -1,0 +1,23 @@
+{
+  "users": [
+    {
+      "name": "User 1",
+      "friends": [
+        {
+          "hidden": true,
+          "name": "Friend 1"
+        },
+        {
+          "name": "Friend 2"
+        },
+        {
+          "name": "Friend 3"
+        }
+      ]
+    },
+    {
+      "name": "User 2",
+      "friends": []
+    }
+  ]
+}

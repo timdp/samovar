@@ -1,0 +1,29 @@
+{
+  "version": "1.2.3",
+  "%+": {
+    "%repeat": 5,
+    "body": {
+      "key${_}": "value${_}"
+    }
+  },
+  "users": {
+    "%=": {
+      "%map": "users",
+      "as": "u",
+      "to": {
+        "name": "${u.name}",
+        "friends": {
+          "%=": {
+            "%map": {
+              "%=": {
+                "%filter": "u.friends",
+                "where": "!_.hidden"
+              }
+            },
+            "to": "${_.name}"
+          }
+        }
+      }
+    }
+  }
+}
