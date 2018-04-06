@@ -1,5 +1,7 @@
 # Samovar
 
+[![npm](https://img.shields.io/npm/v/samovar.svg)](https://www.npmjs.com/package/samovar) [![Dependencies](https://img.shields.io/david/timdp/samovar.svg)](https://david-dm.org/timdp/samovar) [![Build Status](https://img.shields.io/circleci/project/github/timdp/samovar/master.svg?label=build)](https://circleci.com/gh/timdp/samovar) [![Coverage Status](https://img.shields.io/coveralls/timdp/samovar/master.svg)](https://coveralls.io/r/timdp/samovar) [![JavaScript Standard Style](https://img.shields.io/badge/code%20style-standard-brightgreen.svg)](http://standardjs.com/)
+
 A pure-JSON template language and renderer. Also supports YAML.
 
 ## Installation
