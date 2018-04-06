@@ -1,0 +1,9 @@
+{
+  "key1": "value1",
+  "++": {
+    "_if_": "true",
+    "then": {
+      "key2": "value2"
+    }
+  }
+}

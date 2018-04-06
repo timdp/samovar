@@ -1,18 +1,31 @@
 {
-  "name": "json-template",
+  "name": "samovar",
+  "description": "A pure-JSON template language and renderer. Also supports YAML.",
   "version": "0.0.0",
-  "private": true,
-  "main": "index.js",
-  "license": "MIT",
-  "scripts": {
-    "test": "nyc ava"
+  "author": {
+    "name": "Tim De Pauw",
+    "url": "https://tmdpw.eu"
   },
+  "license": "MIT",
+  "engines": {
+    "node": ">=8",
+    "yarn": ">=1.5.1"
+  },
+  "main": "index.js",
+  "files": [
+    "index.js"
+  ],
+  "scripts": {
+    "test": "standard && nyc ava"
+  },
+  "repository": "timdp/samovar",
   "dependencies": {
-    "expressions-js": "^0.1.12",
-    "js-yaml": "^3.11.0"
+    "expressions-js": "^0.1.12"
   },
   "devDependencies": {
     "ava": "^0.25.0",
-    "nyc": "^11.6.0"
+    "js-yaml": "^3.11.0",
+    "nyc": "^11.6.0",
+    "standard": "^11.0.1"
   }
 }

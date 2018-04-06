@@ -1,0 +1,11 @@
+{
+  "values": [
+    "value1",
+    {
+      "++": {
+        "_if_": "true",
+        "then": "value2"
+      }
+    }
+  ]
+}

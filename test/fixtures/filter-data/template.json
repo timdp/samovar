@@ -1,0 +1,8 @@
+{
+  "positive": {
+    "<-": {
+      "_filter_": "values",
+      "where": "_ > 0"
+    }
+  }
+}
