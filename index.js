@@ -62,7 +62,7 @@ controls.if = (arg, control, data) => {
 }
 
 const isControlKey = key =>
-  (key.length > 3 && key.startsWith(CONTROL_CHAR) && key.endsWith(CONTROL_CHAR))
+  (key.length > 2 && key.startsWith(CONTROL_CHAR) && key.endsWith(CONTROL_CHAR))
 
 const renderControl = (control, data) => {
   const key = Object.keys(control).find(isControlKey)
