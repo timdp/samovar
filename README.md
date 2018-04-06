@@ -1,7 +1,7 @@
 # JSON Template
 
 An attempt at a JSON template processor that uses pure-JSON templates.
-Should work equally well as YAML.
+Also works with YAML.
 
 ## Installation
 

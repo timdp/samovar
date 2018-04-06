@@ -1,0 +1,10 @@
+{
+  "values": {
+    "++": {
+      "_repeat_": "times",
+      "body": {
+        "item${_}": true
+      }
+    }
+  }
+}

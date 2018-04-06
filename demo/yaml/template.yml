@@ -1,0 +1,18 @@
+version: 1.2.3
+++:
+  _repeat_: 5
+  body:
+    "key${_}": "value${_}"
+users:
+  <-:
+    _map_: "users"
+    as: "u"
+    to:
+      name: "${u.name}"
+      friends:
+        <-:
+          _map_:
+            <-:
+              _filter_: "u.friends"
+              where: "!_.hidden"
+          to: "${_.name}"

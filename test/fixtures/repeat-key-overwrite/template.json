@@ -1,0 +1,10 @@
+{
+  "values": {
+    "++": {
+      "_repeat_": 3,
+      "body": {
+        "key": "value"
+      }
+    }
+  }
+}

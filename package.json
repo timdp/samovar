@@ -4,7 +4,15 @@
   "private": true,
   "main": "index.js",
   "license": "MIT",
+  "scripts": {
+    "test": "nyc ava"
+  },
   "dependencies": {
-    "expressions-js": "^0.1.12"
+    "expressions-js": "^0.1.12",
+    "js-yaml": "^3.11.0"
+  },
+  "devDependencies": {
+    "ava": "^0.25.0",
+    "nyc": "^11.6.0"
   }
 }

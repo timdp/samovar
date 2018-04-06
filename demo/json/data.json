@@ -4,8 +4,8 @@
       "name": "User 1",
       "friends": [
         {
-          "hidden": true,
-          "name": "Friend 1"
+          "name": "Friend 1",
+          "hidden": true
         },
         {
           "name": "Friend 2"

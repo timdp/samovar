@@ -1,0 +1,13 @@
+{
+  "array": [
+    "foo",
+    "bar",
+    {
+      "<-": {
+        "_repeat_": 3,
+        "body": "baz"
+      }
+    },
+    "quux"
+  ]
+}

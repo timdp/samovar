@@ -1,0 +1,9 @@
+users:
+  - name: User 1
+    friends:
+      - name: Friend 1
+        hidden: true
+      - name: Friend 2
+      - name: Friend 3
+  - name: User 2
+    friends: []
