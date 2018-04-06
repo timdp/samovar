@@ -18,7 +18,8 @@
   "scripts": {
     "test:lint": "standard",
     "test": "yarn run test:lint && nyc ava",
-    "test:ci": "yarn run test:lint && nyc ava --tap | tap-xunit >/tmp/test-results/samovar/junit.xml"
+    "test:ci": "yarn run test:lint && nyc ava --tap | tap-xunit >/tmp/test-results/samovar/junit.xml",
+    "coverage": "nyc report --reporter=text-lcov | coveralls"
   },
   "repository": "timdp/samovar",
   "dependencies": {
@@ -26,6 +27,7 @@
   },
   "devDependencies": {
     "ava": "^0.25.0",
+    "coveralls": "^3.0.0",
     "js-yaml": "^3.11.0",
     "nyc": "^11.6.0",
     "standard": "^11.0.1",

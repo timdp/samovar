@@ -31,7 +31,10 @@ jobs:
           key: v1-dependencies-{{ checksum "yarn.lock" }}
       - run:
           name: Run tests
-          command: yarn test:ci
+          command: yarn run test:ci
+      - run:
+          name: Report coverage
+          command: yarn run coverage
       - store_test_results:
           path: /tmp/test-results
           when: always
