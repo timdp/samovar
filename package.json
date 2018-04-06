@@ -16,7 +16,9 @@
     "index.js"
   ],
   "scripts": {
-    "test": "standard && nyc ava"
+    "test:lint": "standard",
+    "test": "yarn run test:lint && nyc ava",
+    "test:ci": "yarn run test:lint && nyc ava --tap | tap-xunit >/tmp/test-results/samovar/junit.xml"
   },
   "repository": "timdp/samovar",
   "dependencies": {
@@ -26,6 +28,7 @@
     "ava": "^0.25.0",
     "js-yaml": "^3.11.0",
     "nyc": "^11.6.0",
-    "standard": "^11.0.1"
+    "standard": "^11.0.1",
+    "tap-xunit": "^2.3.0"
   }
 }
