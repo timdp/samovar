@@ -6,6 +6,12 @@
     "name": "Tim De Pauw",
     "url": "https://tmdpw.eu"
   },
+  "keywords": [
+    "json",
+    "yaml",
+    "template",
+    "declarative"
+  ],
   "license": "MIT",
   "engines": {
     "node": ">=8",
