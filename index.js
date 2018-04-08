@@ -42,14 +42,20 @@ controls.filter = (arg, { as, index, where }, data) => {
   ]
 }
 
-controls.repeat = (arg, { body }, data) => {
+controls.repeat = (arg, { body, index }, data) => {
   const times = (typeof arg === 'string')
     ? evaluateExpression(arg, data)
     : arg
   return [
     true,
     Array.apply(null, { length: times })
-      .map((_, i) => render(body, Object.assign({}, data, { _: i })))
+      .map((_, idx) => {
+        const augmentedData = Object.assign({}, data, { _index: idx })
+        if (index != null) {
+          augmentedData[index] = idx
+        }
+        return render(body, augmentedData)
+      })
   ]
 }
 

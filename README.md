@@ -265,7 +265,7 @@ Options:
 * `index`: additional identifier for the current index
 
 You would mainly use `as` and `index` in nested structures, as each structure
-will override the parent's `_` reference.
+will override the parent's `_` and `index` references.
 
 #### Filter
 
@@ -282,19 +282,23 @@ Options:
 * `index`: additional identifier for the current index
 
 You would mainly use `as` and `index` in nested structures, as each structure
-will override the parent's `_` reference.
+will override the parent's `_` and `_index` references.
 
 #### Repeat
 
 If you just need to repeat an expression a fixed number of times without
-providing an array as input, you can use the `_repeat_` structure. Like `_map_`
-and `_filter_`, it produces an array that can be passed to the `<-` or the `++`
-operator.
+providing an array as input, you can use the `_repeat_` structure. Think of it
+as shorthand for `_map_` with an array from 0 to the number of iterations minus
+one. The `_index` variable references the current index.
 
 Options:
 
 * `_repeat_`: number of iterations
 * `body`: projection expression
+* `index`: additional identifier for the current index
+
+You would mainly use `index` in nested structures, as each structure will
+override the parent's `_index` reference.
 
 #### If
 

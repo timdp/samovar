@@ -3,7 +3,7 @@
     "++": {
       "_repeat_": 3,
       "body": {
-        "item${_}": true
+        "item${_index}": true
       }
     }
   }

@@ -2,7 +2,7 @@ version: 1.2.3
 ++:
   _repeat_: 5
   body:
-    "key${_}": "value${_}"
+    "key${_index}": "value${_index}"
 users:
   <-:
     _map_: "users"
