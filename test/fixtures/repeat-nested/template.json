@@ -1,0 +1,16 @@
+{
+  "outer": {
+    "++": {
+      "_repeat_": 3,
+      "index": "outerIndex",
+      "body": {
+        "inner${_index}": {
+          "<-": {
+            "_repeat_": 2,
+            "body": "value:${outerIndex}:${_index}"
+          }
+        }
+      }
+    }
+  }
+}
