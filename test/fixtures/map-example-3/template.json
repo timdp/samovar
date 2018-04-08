@@ -1,0 +1,16 @@
+{
+  "userNames": [
+    {
+      "++": {
+        "_map_": "users",
+        "to": "${_.firstName} ${_.lastName}"
+      }
+    },
+    {
+      "++": {
+        "_map_": "superusers",
+        "to": "${_.firstName} ${_.lastName}"
+      }
+    }
+  ]
+}

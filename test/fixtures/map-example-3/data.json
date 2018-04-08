@@ -1,0 +1,21 @@
+{
+  "users": [
+    {
+      "id": 42,
+      "firstName": "John",
+      "lastName": "Doe"
+    },
+    {
+      "id": 43,
+      "firstName": "Jane",
+      "lastName": "Doe"
+    }
+  ],
+  "superusers": [
+    {
+      "id": 0,
+      "firstName": "Flying",
+      "lastName": "Spaghetti Monster"
+    }
+  ]
+}

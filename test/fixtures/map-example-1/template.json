@@ -1,0 +1,8 @@
+{
+  "userNames": {
+    "<-": {
+      "_map_": "users",
+      "to": "${_.firstName} ${_.lastName}"
+    }
+  }
+}

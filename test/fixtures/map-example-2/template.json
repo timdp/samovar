@@ -1,0 +1,10 @@
+{
+  "usersById": {
+    "++": {
+      "_map_": "users",
+      "to": {
+        "${_.id}": "${_.firstName} ${_.lastName}"
+      }
+    }
+  }
+}
