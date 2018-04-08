@@ -302,7 +302,7 @@ override the parent's `_index` reference.
 
 #### If
 
-While `_map_`, `_filter`, and `_repeat_` always produce an array, you can use
+While `_map_`, `_filter_`, and `_repeat_` always produce an array, you can use
 `_if_` to write conditional structures that result in a scalar value. If the
 expression passed to `_if_` results in a true value, the structure will
 evaluate to the expression in the `then` option; otherwise, the `else` option
