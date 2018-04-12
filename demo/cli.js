@@ -25,6 +25,5 @@ console.log()
 
 const templateYaml = readYaml('template')
 const dataYml = readYaml('data')
-
 const resultYaml = render(templateYaml, dataYml)
 console.log(yaml.safeDump(resultYaml))
