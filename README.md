@@ -173,8 +173,10 @@ Output:
 
 ```json
 {
-  "42": "John Doe",
-  "43": "Jane Doe"
+  "usersById": {
+    "42": "John Doe",
+    "43": "Jane Doe"
+  }
 }
 ```
 
