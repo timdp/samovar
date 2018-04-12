@@ -67,6 +67,11 @@ controls.if = (arg, control, data) => {
   ]
 }
 
+controls.eval = (arg, control, data) => ([
+  true,
+  evaluateExpression(arg, data)
+])
+
 const isControlKey = key =>
   (key.length > 2 && key.startsWith(CONTROL_CHAR) && key.endsWith(CONTROL_CHAR))
 

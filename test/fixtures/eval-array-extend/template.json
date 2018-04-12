@@ -1,0 +1,11 @@
+{
+  "result": [
+    "first",
+    {
+      "++": {
+        "_eval_": "array"
+      }
+    },
+    "last"
+  ]
+}
